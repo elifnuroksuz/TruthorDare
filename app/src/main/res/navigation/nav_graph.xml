@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="navigation"
+    app:startDestination="@id/bottleFragment">
+
+    <fragment
+        android:id="@+id/bottleFragment"
+        android:name="com.elifnuroksuz.truthordare.BottleFragment"
+        android:label="Bottle Fragment"
+        tools:layout="@layout/fragment_bottle">
+        <action
+            android:id="@+id/action_bottleFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.elifnuroksuz.truthordare.QuestionFragment"
+        android:label="Question Fragment"
+        tools:layout="@layout/fragment_question" />
+</navigation>
